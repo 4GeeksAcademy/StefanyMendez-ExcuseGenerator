@@ -12,6 +12,7 @@ window.onload = function() {
   genereteExcuse();
 };
 
+//Función para generar la excusa
 function genereteExcuse() {
   let who = ["The dog", "My grandma", "His turtle", "My bird"];
   let action = ["ate", "peed", "crushed", "broke"];
@@ -38,6 +39,6 @@ function genereteExcuse() {
   excuse += when[Math.floor(Math.random() * when.length)];
   excuse += " ";
 
-  const p = document.getElementById("excuse");
-  p.innerHTML = excuse;
+  const INSERTEXCUSE = document.getElementById("excuse");
+  INSERTEXCUSE.innerText = excuse;
 }
